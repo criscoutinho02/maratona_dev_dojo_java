@@ -11,11 +11,20 @@ public class CalculadoraTest {
         calc.somaDoisNumeros();
         calc.subtraiDoisNumeros();
 
-        calc.multiplicaDoisNumero(5,4);
+        calc.multiplicaDoisNumero(5, 4);
         System.out.println("Divisão");
-        System.out.println(calc.divideDoisNumeros(20 , 0));
+        System.out.println(calc.divideDoisNumeros(20, 0));
         System.out.println("Impressão divisão");
-        calc.imprimeDoisNumerosDivididos(10,0);
+        calc.imprimeDoisNumerosDivididos(10, 0);
+
+
+        int[] numeros = new int[]{1, 2, 3, 4, 5};
+        System.out.println("Total se varargs");
+        calc.somaArray(numeros);
+        System.out.println("Total com varargs");
+        calc.somaVarArgs(numeros);
+        calc.somaVarArgs(1,2,3,4,5);
+
 
     }
 }

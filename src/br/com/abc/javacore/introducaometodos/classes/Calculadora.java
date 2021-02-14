@@ -27,4 +27,33 @@ public class Calculadora {
         System.out.println("Não é possível dividir por 0");
     }
 
+    public void alteraDoisParametros(int num1, int num2) {
+        num1 = 30;
+        num2 = 40;
+
+        System.out.println("Numero 1: " + num1);
+        System.out.println("Numero 2: " + num2);
+    }
+
+    public void somaArray(int[] numeros) {
+        int soma = 0;
+        for (int x : numeros) {
+
+            soma = soma + x;
+
+        }
+        System.out.println("Total: " + soma);
+    }
+
+    public void somaVarArgs(int... numeros ){
+        int soma = 0;
+        for (int x : numeros) {
+
+            soma = soma + x;
+
+        }
+        System.out.println("Total: " + soma);
+
+    }
+
 }
