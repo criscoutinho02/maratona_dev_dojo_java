@@ -5,7 +5,7 @@ public class Carro {
     //velocidade limite deve ser de 240km por hora
     private String nome;
     private double velocidadeMaxima;
-    private static double limitadorVelocidadeLimite = 240;
+    private static double velocidadeLimite = 240;
 
 
     public Carro(String nome, double velocidadeMaxima) {
@@ -16,10 +16,19 @@ public class Carro {
     public Carro() {
     }
 
-    public void imprime(){
+    public void imprime() {
+        System.out.println("\n");
         System.out.println("Nome : " + this.nome);
         System.out.println("Velocidade Máxima : " + this.velocidadeMaxima);
-        System.out.println("Limitador Velocidade Máxima : " + limitadorVelocidadeLimite);
+        System.out.println("Limitador Velocidade Máxima : " + velocidadeLimite);
+    }
+
+    public static void setVelocidadeLimite(double velocidadeLimite) {
+        Carro.velocidadeLimite = velocidadeLimite;
+    }
+
+    public static double getVelocidadeLimite(){
+        return velocidadeLimite;
     }
 
     public String getNome() {
@@ -39,11 +48,11 @@ public class Carro {
     }
 
     public double getLimitadorVelocidadeLimite() {
-        return limitadorVelocidadeLimite;
+        return velocidadeLimite;
     }
 
     public void setLimitadorVelocidadeLimite(double limitadorVelocidadeLimite) {
-        this.limitadorVelocidadeLimite = limitadorVelocidadeLimite;
+        this.velocidadeLimite = limitadorVelocidadeLimite;
     }
 
 

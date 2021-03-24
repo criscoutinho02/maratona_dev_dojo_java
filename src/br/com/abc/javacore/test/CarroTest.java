@@ -4,6 +4,9 @@ import br.com.abc.javacore.Fmodificadoresestaticos.classes.Carro;
 
 public class CarroTest {
     public static void main(String[] args) {
+
+        Carro.setVelocidadeLimite(220);
+
         Carro c1 = new Carro("bmw", 280);
         Carro c2 = new Carro("audi", 275);
         Carro c3 = new Carro("mercedes", 290);
