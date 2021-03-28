@@ -1,4 +1,4 @@
-package br.com.abc.javacore.test;
+package br.com.abc.javacore.Fmodificadoresestaticos.test;
 
 import br.com.abc.javacore.Fmodificadoresestaticos.classes.Carro;
 
