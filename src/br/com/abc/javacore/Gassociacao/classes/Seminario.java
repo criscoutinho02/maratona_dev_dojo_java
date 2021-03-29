@@ -14,7 +14,6 @@ public class Seminario {
     public Seminario() {
     }
 
-
     public void print() {
         System.out.println("---------------------------Relatório de Seminários---------------------------");
 
