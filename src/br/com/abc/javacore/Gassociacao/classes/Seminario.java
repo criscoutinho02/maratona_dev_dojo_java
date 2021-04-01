@@ -18,7 +18,13 @@ public class Seminario {
         System.out.println("---------------------------Relatório de Seminários---------------------------");
 
         System.out.println("Título: " + this.titulo);
-        System.out.println("Professor palestrante : " + this.professor.getNome());
+
+        if(this.professor != null) {
+            System.out.println("Professor palestrante : " + this.professor.getNome());
+        } else {
+            System.out.println("Não há professor cadastrado!");
+        }
+
         if (this.local != null) {
             System.out.println("Local : " + this.local.getRua() + ", " + this.local.getBairro());
         } else {
